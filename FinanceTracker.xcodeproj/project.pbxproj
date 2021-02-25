@@ -16,6 +16,7 @@
 		443AE65325E5832800F378AC /* FinanceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65225E5832800F378AC /* FinanceTrackerTests.swift */; };
 		443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */; };
 		443AE66F25E5836700F378AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 443AE66E25E5836700F378AC /* .gitignore */; };
+		7AE9326725E82742004F65BA /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE9326625E82742004F65BA /* Justin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTrackerUITests.swift; sourceTree = "<group>"; };
 		443AE65F25E5832800F378AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443AE66E25E5836700F378AC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AE9326625E82742004F65BA /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				443AE63B25E5832700F378AC /* AppDelegate.swift */,
 				443AE63D25E5832700F378AC /* SceneDelegate.swift */,
 				443AE63F25E5832700F378AC /* ViewController.swift */,
+				7AE9326625E82742004F65BA /* Justin.swift */,
 				443AE64125E5832700F378AC /* Main.storyboard */,
 				443AE64425E5832800F378AC /* Assets.xcassets */,
 				443AE64625E5832800F378AC /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE9326725E82742004F65BA /* Justin.swift in Sources */,
 				443AE64025E5832700F378AC /* ViewController.swift in Sources */,
 				443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */,
 				443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */,
