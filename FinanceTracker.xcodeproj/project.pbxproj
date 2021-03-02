@@ -19,6 +19,7 @@
 		443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */; };
 		443AE66F25E5836700F378AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 443AE66E25E5836700F378AC /* .gitignore */; };
 		44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C128F825EC3B5E0024B6FF /* Monte.swift */; };
+		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		443AE65F25E5832800F378AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443AE66E25E5836700F378AC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		44C128F825EC3B5E0024B6FF /* Monte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monte.swift; sourceTree = "<group>"; };
+		7A69B7E325EEAF73004A1092 /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				443AE64425E5832800F378AC /* Assets.xcassets */,
 				443AE64625E5832800F378AC /* LaunchScreen.storyboard */,
 				443AE64925E5832800F378AC /* Info.plist */,
+				7A69B7E325EEAF73004A1092 /* Justin.swift */,
 				14D9BFAC25E8273C002DFF87 /* Shiv.swift */,
 				2F53DE7425EB103B00AB178C /* Trinh.swift */,
 				44C128F825EC3B5E0024B6FF /* Monte.swift */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */,
 				2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */,
 				443AE64025E5832700F378AC /* ViewController.swift in Sources */,
 				443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */,
