@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
+		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
 		443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63B25E5832700F378AC /* AppDelegate.swift */; };
 		443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63D25E5832700F378AC /* SceneDelegate.swift */; };
 		443AE64025E5832700F378AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63F25E5832700F378AC /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,9 @@
 			dependencies = (
 			);
 			name = FinanceTracker;
+			packageProductDependencies = (
+				14DB58A325FA85E90029B2DD /* SwiftUICharts */,
+			);
 			productName = FinanceTracker;
 			productReference = 443AE63825E5832700F378AC /* FinanceTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 443AE62F25E5832700F378AC;
+			packageReferences = (
+				14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 443AE63925E5832700F378AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -601,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14DB58A325FA85E90029B2DD /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 443AE63025E5832700F378AC /* Project object */;
 }
