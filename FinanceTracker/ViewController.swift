@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func connectAccount(_ sender: Any) {
+        let connect = ConnectBankAccount(self)
+        connect.connect()
+    }
+    
 }
 

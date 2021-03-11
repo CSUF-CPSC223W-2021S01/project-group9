@@ -13,6 +13,9 @@
 
 		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
 
+		4431E76F25EEE8D6001D5E4B /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431E76E25EEE8D6001D5E4B /* Justin.swift */; };
+		4431E77325EEE945001D5E4B /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431E77225EEE945001D5E4B /* Transactions.swift */; };
+
 		443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63B25E5832700F378AC /* AppDelegate.swift */; };
 		443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63D25E5832700F378AC /* SceneDelegate.swift */; };
 		443AE64025E5832700F378AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63F25E5832700F378AC /* ViewController.swift */; };
@@ -23,7 +26,12 @@
 		443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */; };
 		443AE66F25E5836700F378AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 443AE66E25E5836700F378AC /* .gitignore */; };
 		44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C128F825EC3B5E0024B6FF /* Monte.swift */; };
+
+		44E25E5A25EEC2050008C45F /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E25E5925EEC2050008C45F /* LinkKit.xcframework */; };
+		44E25E5B25EEC2050008C45F /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44E25E5925EEC2050008C45F /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +51,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		44E25E5C25EEC2050008C45F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44E25E5B25EEC2050008C45F /* LinkKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		14D9BFAC25E8273C002DFF87 /* Shiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiv.swift; sourceTree = "<group>"; };
 		2F53DE7425EB103B00AB178C /* Trinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinh.swift; sourceTree = "<group>"; };
+		4431E76E25EEE8D6001D5E4B /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
+		4431E77225EEE945001D5E4B /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		443AE63825E5832700F378AC /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443AE63B25E5832700F378AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443AE63D25E5832700F378AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +86,12 @@
 		443AE65F25E5832800F378AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443AE66E25E5836700F378AC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		44C128F825EC3B5E0024B6FF /* Monte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monte.swift; sourceTree = "<group>"; };
+
+		44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "plaid-link-ios-ios-2.0.11.zip"; path = "../plaid-link-ios-ios-2.0.11.zip"; sourceTree = "<group>"; };
+		44E25E5925EEC2050008C45F /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+
 		7A69B7E325EEAF73004A1092 /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +99,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				44E25E5A25EEC2050008C45F /* LinkKit.xcframework in Frameworks */,
+
 				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +132,7 @@
 				443AE65125E5832800F378AC /* FinanceTrackerTests */,
 				443AE65C25E5832800F378AC /* FinanceTrackerUITests */,
 				443AE63925E5832700F378AC /* Products */,
+				44E25E5725EEC1BC0008C45F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +160,8 @@
 				14D9BFAC25E8273C002DFF87 /* Shiv.swift */,
 				2F53DE7425EB103B00AB178C /* Trinh.swift */,
 				44C128F825EC3B5E0024B6FF /* Monte.swift */,
+				4431E76E25EEE8D6001D5E4B /* Justin.swift */,
+				4431E77225EEE945001D5E4B /* Transactions.swift */,
 			);
 			path = FinanceTracker;
 			sourceTree = "<group>";
@@ -148,6 +184,15 @@
 			path = FinanceTrackerUITests;
 			sourceTree = "<group>";
 		};
+		44E25E5725EEC1BC0008C45F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E25E5925EEC2050008C45F /* LinkKit.xcframework */,
+				44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +203,7 @@
 				443AE63425E5832700F378AC /* Sources */,
 				443AE63525E5832700F378AC /* Frameworks */,
 				443AE63625E5832700F378AC /* Resources */,
+				44E25E5C25EEC2050008C45F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,12 +331,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */,
+
 				2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */,
 				443AE64025E5832700F378AC /* ViewController.swift in Sources */,
 				443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */,
 				443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */,
 				14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */,
+				4431E77325EEE945001D5E4B /* Transactions.swift in Sources */,
 				44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
