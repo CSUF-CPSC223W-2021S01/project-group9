@@ -24,6 +24,14 @@
                                     <action selector="connectAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrZ-SW-8pF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crm-r2-MK7">
+                                <rect key="frame" x="140" y="309" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Transactions"/>
+                                <connections>
+                                    <action selector="getTransactions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oea-aY-bvd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
