@@ -8,17 +8,27 @@
 import Foundation
 
 struct transaction {
-    var date_transacted: String
-    var date_posted: String
-    var amount: Double
-    var description: String
-    var currency: String
+    var name             : String
+    var account_owner    : String
+    var amount           : Double
+    var authorized_date  : String
+    var currency         : String
+    var date             : String
+    
 
-    init(date_transacted: String, date_posted: String, amount: Double, description: String, currency: String) {
-        self.date_transacted = date_transacted
-        self.date_posted = date_posted
-        self.amount = amount
-        self.description = description
-        self.currency = currency
+    init(name             : String,
+         account_owner    : String,
+         amount           : Double,
+         authorized_date  : String,
+         currency         : String,
+         date             : String) {
+        
+        self.name            = name
+        self.account_owner   = account_owner
+        self.amount          = amount
+        self.authorized_date = authorized_date
+        self.currency        = currency
+        self.date            = date
+        
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nb-7q-cqu">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -33,7 +33,7 @@
             <objects>
                 <viewController id="lrD-Nx-IIc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GSY-OA-3Xh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="sva-zG-XI0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,11 +49,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinanceTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-5b-OZf">
-                                <rect key="frame" x="114" y="433" width="187" height="30"/>
+                                <rect key="frame" x="94" y="391" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Connect Account"/>
                                 <connections>
@@ -75,11 +75,11 @@
             <objects>
                 <viewController id="oty-T3-NSa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ozE-Go-CHd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crm-r2-MK7">
-                                <rect key="frame" x="149" y="433" width="117" height="30"/>
+                                <rect key="frame" x="129" y="391" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Transactions"/>
                                 <connections>
@@ -101,7 +101,7 @@
             <objects>
                 <viewController id="RHI-qj-1TO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CPg-Ms-H9d">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="P20-Sh-MjS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
