@@ -19,5 +19,11 @@ class ViewController: UIViewController {
         connect.connect()
     }
     
+    @IBAction func getTransactions(_ sender: Any) {
+        let transactions = FinanceTracker.getTransactions()
+        transactions.requestData { result in
+            print(result) 
+        }
+    }
 }
 
