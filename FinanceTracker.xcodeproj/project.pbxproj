@@ -13,7 +13,6 @@
 		4431E77325EEE945001D5E4B /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431E77225EEE945001D5E4B /* Transactions.swift */; };
 		443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63B25E5832700F378AC /* AppDelegate.swift */; };
 		443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63D25E5832700F378AC /* SceneDelegate.swift */; };
-		443AE64025E5832700F378AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63F25E5832700F378AC /* ViewController.swift */; };
 		443AE64325E5832700F378AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AE64125E5832700F378AC /* Main.storyboard */; };
 		443AE64525E5832800F378AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443AE64425E5832800F378AC /* Assets.xcassets */; };
 		443AE64825E5832800F378AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AE64625E5832800F378AC /* LaunchScreen.storyboard */; };
@@ -21,6 +20,10 @@
 		443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */; };
 		443AE66F25E5836700F378AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 443AE66E25E5836700F378AC /* .gitignore */; };
 		44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C128F825EC3B5E0024B6FF /* Monte.swift */; };
+		7A117D842609B749002C2357 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D832609B749002C2357 /* HomeController.swift */; };
+		7A117D882609B763002C2357 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D872609B763002C2357 /* DataController.swift */; };
+		7A117D8C2609B774002C2357 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8B2609B774002C2357 /* GraphController.swift */; };
+		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
 		7AB8A84226085F770007F054 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
 		7AB8A84326085F770007F054 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -65,7 +68,6 @@
 		443AE63825E5832700F378AC /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443AE63B25E5832700F378AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443AE63D25E5832700F378AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		443AE63F25E5832700F378AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		443AE64225E5832700F378AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443AE64425E5832800F378AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443AE64725E5832800F378AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,10 @@
 		44C128F825EC3B5E0024B6FF /* Monte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monte.swift; sourceTree = "<group>"; };
 		44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "plaid-link-ios-ios-2.0.11.zip"; path = "../plaid-link-ios-ios-2.0.11.zip"; sourceTree = "<group>"; };
 		44E25E5925EEC2050008C45F /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		7A117D832609B749002C2357 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		7A117D872609B763002C2357 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7A117D8B2609B774002C2357 /* GraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphController.swift; sourceTree = "<group>"; };
+		7A117D8F2609B780002C2357 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		7A69B7E325EEAF73004A1092 /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
 		7AB8A84126085F770007F054 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../../../../Downloads/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +144,10 @@
 			children = (
 				443AE63B25E5832700F378AC /* AppDelegate.swift */,
 				443AE63D25E5832700F378AC /* SceneDelegate.swift */,
-				443AE63F25E5832700F378AC /* ViewController.swift */,
+				7A117D832609B749002C2357 /* HomeController.swift */,
+				7A117D872609B763002C2357 /* DataController.swift */,
+				7A117D8B2609B774002C2357 /* GraphController.swift */,
+				7A117D8F2609B780002C2357 /* LoginController.swift */,
 				443AE64125E5832700F378AC /* Main.storyboard */,
 				443AE64425E5832800F378AC /* Assets.xcassets */,
 				443AE64625E5832800F378AC /* LaunchScreen.storyboard */,
@@ -320,10 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */,
+				7A117D902609B780002C2357 /* LoginController.swift in Sources */,
 				2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */,
-				443AE64025E5832700F378AC /* ViewController.swift in Sources */,
 				443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */,
 				443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */,
+				7A117D882609B763002C2357 /* DataController.swift in Sources */,
+				7A117D842609B749002C2357 /* HomeController.swift in Sources */,
+				7A117D8C2609B774002C2357 /* GraphController.swift in Sources */,
 				14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */,
 				4431E77325EEE945001D5E4B /* Transactions.swift in Sources */,
 				44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */,
