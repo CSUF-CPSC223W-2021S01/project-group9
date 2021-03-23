@@ -24,6 +24,7 @@
 		7A117D882609B763002C2357 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D872609B763002C2357 /* DataController.swift */; };
 		7A117D8C2609B774002C2357 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8B2609B774002C2357 /* GraphController.swift */; };
 		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
+		7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D9F2609C26D002C2357 /* TableViewCell.swift */; };
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
 		7AB8A84226085F770007F054 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
 		7AB8A84326085F770007F054 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -86,6 +87,7 @@
 		7A117D872609B763002C2357 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7A117D8B2609B774002C2357 /* GraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphController.swift; sourceTree = "<group>"; };
 		7A117D8F2609B780002C2357 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7A117D9F2609C26D002C2357 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7A69B7E325EEAF73004A1092 /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
 		7AB8A84126085F770007F054 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../../../../Downloads/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				443AE63D25E5832700F378AC /* SceneDelegate.swift */,
 				7A117D832609B749002C2357 /* HomeController.swift */,
 				7A117D872609B763002C2357 /* DataController.swift */,
+				7A117D9F2609C26D002C2357 /* TableViewCell.swift */,
 				7A117D8B2609B774002C2357 /* GraphController.swift */,
 				7A117D8F2609B780002C2357 /* LoginController.swift */,
 				443AE64125E5832700F378AC /* Main.storyboard */,
@@ -337,6 +340,7 @@
 				7A117D842609B749002C2357 /* HomeController.swift in Sources */,
 				7A117D8C2609B774002C2357 /* GraphController.swift in Sources */,
 				14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */,
+				7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */,
 				4431E77325EEE945001D5E4B /* Transactions.swift in Sources */,
 				44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */,
 			);
