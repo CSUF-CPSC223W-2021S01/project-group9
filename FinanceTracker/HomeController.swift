@@ -11,7 +11,6 @@ class HomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     var dataContainer = data()
     @IBAction func getTransactions(_ sender: Any) {
