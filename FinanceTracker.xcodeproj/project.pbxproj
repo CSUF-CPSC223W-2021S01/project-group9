@@ -148,7 +148,11 @@
 			children = (
 				443AE63B25E5832700F378AC /* AppDelegate.swift */,
 				443AE63D25E5832700F378AC /* SceneDelegate.swift */,
-				7A2B2B9E260C00C600FC30FB /* ViewControllers */,
+				7A117D832609B749002C2357 /* HomeController.swift */,
+				7A117D872609B763002C2357 /* DataController.swift */,
+				7A117D9F2609C26D002C2357 /* TableViewCell.swift */,
+				7A117D8B2609B774002C2357 /* GraphController.swift */,
+				7A117D8F2609B780002C2357 /* LoginController.swift */,
 				443AE64125E5832700F378AC /* Main.storyboard */,
 				443AE64425E5832800F378AC /* Assets.xcassets */,
 				443AE64625E5832800F378AC /* LaunchScreen.storyboard */,
@@ -190,18 +194,6 @@
 				44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7A2B2B9E260C00C600FC30FB /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				7A117D832609B749002C2357 /* HomeController.swift */,
-				7A117D872609B763002C2357 /* DataController.swift */,
-				7A117D9F2609C26D002C2357 /* TableViewCell.swift */,
-				7A117D8B2609B774002C2357 /* GraphController.swift */,
-				7A117D8F2609B780002C2357 /* LoginController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
