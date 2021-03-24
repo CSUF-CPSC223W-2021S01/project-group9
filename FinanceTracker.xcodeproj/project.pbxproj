@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14520B6D260AD03F00271FA8 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14520B6C260AD03F00271FA8 /* LinkKit.xcframework */; };
-		14520B6E260AD03F00271FA8 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14520B6C260AD03F00271FA8 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
 		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
 		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
@@ -27,6 +25,8 @@
 		7A117D8C2609B774002C2357 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8B2609B774002C2357 /* GraphController.swift */; };
 		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
 		7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D9F2609C26D002C2357 /* TableViewCell.swift */; };
+		7A2B2B99260BFFC000FC30FB /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
+		7A2B2B9A260BFFC000FC30FB /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		14520B6F260AD03F00271FA8 /* Embed Frameworks */ = {
+		7A2B2B9B260BFFC100FC30FB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				14520B6E260AD03F00271FA8 /* LinkKit.xcframework in Embed Frameworks */,
+				7A2B2B9A260BFFC000FC30FB /* LinkKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14520B6D260AD03F00271FA8 /* LinkKit.xcframework in Frameworks */,
+				7A2B2B99260BFFC000FC30FB /* LinkKit.xcframework in Frameworks */,
 				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +206,7 @@
 				443AE63425E5832700F378AC /* Sources */,
 				443AE63525E5832700F378AC /* Frameworks */,
 				443AE63625E5832700F378AC /* Resources */,
-				14520B6F260AD03F00271FA8 /* Embed Frameworks */,
+				7A2B2B9B260BFFC100FC30FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

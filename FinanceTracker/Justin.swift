@@ -7,26 +7,36 @@
 
 import Foundation
 
-struct transaction {
-    var name             : String
-    var account_owner    : String
-    var amount           : Double
-    var authorized_date  : String
-    var currency         : String
-    var date             : String
-    
+class data{
+    var transactions = [transaction]()
+    init(){
+        transactions.append(transaction(name:"", amount: 0, currency: "", date:""))
+    }
+    func addTransaction(transaction: transaction){
+        transactions.append(transaction)
+    }
+    func total() -> Int{
+        return self.transactions.count
+    }
+    func getTransaction(index: Int) -> transaction{
+        return transactions[index]
+    }
+}
 
-    init(name             : String,
-         account_owner    : String,
-         amount           : Double,
-         authorized_date  : String,
-         currency         : String,
-         date             : String) {
+
+struct transaction {
+    var name: String
+    var amount: Double
+    var currency: String
+    var date: String
+
+    init(name: String,
+         amount: Double,
+         currency: String,
+         date: String) {
         
         self.name            = name
-        self.account_owner   = account_owner
         self.amount          = amount
-        self.authorized_date = authorized_date
         self.currency        = currency
         self.date            = date
         

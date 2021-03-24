@@ -11,5 +11,5 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var merchantNameLabel: UILabel!
-    @IBOutlet weak var amounrLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
 }

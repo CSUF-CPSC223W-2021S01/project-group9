@@ -153,7 +153,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17c-cW-9aE">
-                                                    <rect key="frame" x="22.333333333333314" y="11.333333333333371" width="40.666666666666671" height="20"/>
+                                                    <rect key="frame" x="22.333333333333332" y="11.333333333333336" width="40.666666666666671" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="WvA-0R-b5F"/>
                                                     </constraints>
@@ -183,9 +183,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="amounrLabel" destination="3Af-10-H95" id="PjW-V1-1v3"/>
-                                            <outlet property="dateLabel" destination="17c-cW-9aE" id="q2I-zp-fMr"/>
-                                            <outlet property="merchantName" destination="oHD-22-g20" id="tl5-cp-Sj2"/>
+                                            <outlet property="amountLabel" destination="3Af-10-H95" id="iN1-IT-3HT"/>
+                                            <outlet property="dateLabel" destination="17c-cW-9aE" id="2NK-BO-W4q"/>
+                                            <outlet property="merchantNameLabel" destination="oHD-22-g20" id="zQ2-d0-IzO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
