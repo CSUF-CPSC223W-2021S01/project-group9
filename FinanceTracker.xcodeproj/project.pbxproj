@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14520B6D260AD03F00271FA8 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14520B6C260AD03F00271FA8 /* LinkKit.xcframework */; };
+		14520B6E260AD03F00271FA8 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14520B6C260AD03F00271FA8 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
 		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
 		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
@@ -26,8 +28,6 @@
 		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
 		7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D9F2609C26D002C2357 /* TableViewCell.swift */; };
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
-		7AB8A84226085F770007F054 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
-		7AB8A84326085F770007F054 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7AB8A84426085F770007F054 /* Embed Frameworks */ = {
+		14520B6F260AD03F00271FA8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7AB8A84326085F770007F054 /* LinkKit.xcframework in Embed Frameworks */,
+				14520B6E260AD03F00271FA8 /* LinkKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14520B6C260AD03F00271FA8 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../Desktop/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 		14D9BFAC25E8273C002DFF87 /* Shiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiv.swift; sourceTree = "<group>"; };
 		2F53DE7425EB103B00AB178C /* Trinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinh.swift; sourceTree = "<group>"; };
 		4431E76E25EEE8D6001D5E4B /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
@@ -97,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB8A84226085F770007F054 /* LinkKit.xcframework in Frameworks */,
+				14520B6D260AD03F00271FA8 /* LinkKit.xcframework in Frameworks */,
 				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +131,7 @@
 				44E25E5725EEC1BC0008C45F /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		443AE63925E5832700F378AC /* Products */ = {
 			isa = PBXGroup;
@@ -188,6 +190,7 @@
 			children = (
 				44E25E5925EEC2050008C45F /* LinkKit.xcframework */,
 				7AB8A84126085F770007F054 /* LinkKit.xcframework */,
+				14520B6C260AD03F00271FA8 /* LinkKit.xcframework */,
 				44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */,
 			);
 			name = Frameworks;
@@ -203,7 +206,7 @@
 				443AE63425E5832700F378AC /* Sources */,
 				443AE63525E5832700F378AC /* Frameworks */,
 				443AE63625E5832700F378AC /* Resources */,
-				7AB8A84426085F770007F054 /* Embed Frameworks */,
+				14520B6F260AD03F00271FA8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
