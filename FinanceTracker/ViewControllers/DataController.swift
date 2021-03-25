@@ -7,15 +7,15 @@
 
 import UIKit
 
-class DataController: UIViewController, UITableViewDataSource, UITableViewDelegate{
-    @IBOutlet var table: UITableView!
+class DataController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet var table: UITableView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.delegate = self
-        table.dataSource = self
-        
+        table?.delegate = self
+        table?.dataSource = self
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return HomeController().dataContainer.total()
     }
@@ -30,7 +30,9 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.amountLabel!.text = String(HomeController().dataContainer.getTransaction(index: indexPath.row).amount)
         return cell
     }
-    func updateTable(){
-        UITableViewDataSource.reloadData()
+
+    func updateTable() {
+        self.table?.reloadData()
+//        print(HomeController().dataContainer.total())
     }
 }

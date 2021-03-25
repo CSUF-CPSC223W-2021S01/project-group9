@@ -8,15 +8,16 @@
 import UIKit
 
 class HomeController: UIViewController {
-
+    var dataContainer = data()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    var dataContainer = data()
+    
     @IBAction func getTransactions(_ sender: Any) {
+        self.dataContainer.clear()
         let transactions = FinanceTracker.getTransactions()
         transactions.requestData { result in
-            print(result)
             let transactionArray = result["transactions"] as! [[String:Any]]
             for eachTransaction in transactionArray{
                 let t = transaction(name:     eachTransaction["name"] as! String,
@@ -24,6 +25,7 @@ class HomeController: UIViewController {
                                     currency: eachTransaction["iso_currency_code"] as! String,
                                     date:     eachTransaction["date"] as! String)
                 self.dataContainer.addTransaction(transaction: t)
+                print(self.dataContainer.total())
             }
         }
         DataController().updateTable()
