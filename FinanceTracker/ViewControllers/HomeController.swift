@@ -26,6 +26,6 @@ class HomeController: UIViewController {
                 self.dataContainer.addTransaction(transaction: t)
             }
         }
-//        DataController().updateTable()
+        DataController().updateTable()
     }
 }

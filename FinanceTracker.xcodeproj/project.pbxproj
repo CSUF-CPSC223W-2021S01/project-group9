@@ -65,7 +65,6 @@
 		14520B6C260AD03F00271FA8 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../Desktop/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 		14D9BFAC25E8273C002DFF87 /* Shiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiv.swift; sourceTree = "<group>"; };
 		2F53DE7425EB103B00AB178C /* Trinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinh.swift; sourceTree = "<group>"; };
-		4431E76E25EEE8D6001D5E4B /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
 		4431E77225EEE945001D5E4B /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		443AE63825E5832700F378AC /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443AE63B25E5832700F378AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +156,6 @@
 				14D9BFAC25E8273C002DFF87 /* Shiv.swift */,
 				2F53DE7425EB103B00AB178C /* Trinh.swift */,
 				44C128F825EC3B5E0024B6FF /* Monte.swift */,
-				4431E76E25EEE8D6001D5E4B /* Justin.swift */,
 				4431E77225EEE945001D5E4B /* Transactions.swift */,
 			);
 			path = FinanceTracker;
