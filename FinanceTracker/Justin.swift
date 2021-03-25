@@ -10,7 +10,7 @@ import Foundation
 class data{
     var transactions = [transaction]()
     init(){
-        transactions.append(transaction(name:"", amount: 0, currency: "", date:""))
+//        transactions.append(transaction(name:"", amount: 0, currency: "", date:""))
     }
     func addTransaction(transaction: transaction){
         transactions.append(transaction)
@@ -20,6 +20,9 @@ class data{
     }
     func getTransaction(index: Int) -> transaction{
         return transactions[index]
+    }
+    func clear() {
+        self.transactions =  [transaction]()
     }
 }
 
