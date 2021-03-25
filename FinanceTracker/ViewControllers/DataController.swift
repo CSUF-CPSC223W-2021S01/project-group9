@@ -14,6 +14,7 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return HomeController().dataContainer.total()
@@ -30,8 +31,6 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     func updateTable(){
-        table.delegate = self
-        table.dataSource = self
-        table.reloadData()
+        UITableViewDataSource.reloadData()
     }
 }
