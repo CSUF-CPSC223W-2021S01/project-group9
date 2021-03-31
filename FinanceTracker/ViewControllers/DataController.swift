@@ -8,6 +8,8 @@
 import UIKit
 
 class DataController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    var dataContainer = data()
+    
     @IBOutlet var table: UITableView?
 
     override func viewDidLoad() {
@@ -17,7 +19,7 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return HomeController().dataContainer.total()
+        return self.dataContainer.total()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,14 +27,25 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
 //        cell.dateLabel.text = "01-30-201\(indexPath.row)"
 //        cell.merchantNameLabel.text = "Chase Bank"
 //        cell.amountLabel.text = "$500"
-        cell.dateLabel!.text = HomeController().dataContainer.getTransaction(index: indexPath.row).date
-        cell.merchantNameLabel!.text = HomeController().dataContainer.getTransaction(index: indexPath.row).name
-        cell.amountLabel!.text = String(HomeController().dataContainer.getTransaction(index: indexPath.row).amount)
+        cell.dateLabel!.text = self.dataContainer.getTransaction(index: indexPath.row).date
+        cell.merchantNameLabel!.text = self.dataContainer.getTransaction(index: indexPath.row).name
+        cell.amountLabel!.text = String(self.dataContainer.getTransaction(index: indexPath.row).amount)
         return cell
     }
-
-    func updateTable() {
+    
+    @IBAction func refreshButton(_ sender: Any) {
+        let propertListDecoder = PropertyListDecoder()
+        let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let archiveUrl = directory.appendingPathComponent("transactions").appendingPathExtension("plist")
+        
+        if let retrievedTransactions = try? Data(contentsOf: archiveUrl),
+           let decodedTransactions = try? propertListDecoder.decode(data.self, from: retrievedTransactions) {
+            print(decodedTransactions.total())
+            dataContainer = decodedTransactions
+        }
+        
         self.table?.reloadData()
-//        print(HomeController().dataContainer.total())
+        print(dataContainer.total())
     }
+    
 }

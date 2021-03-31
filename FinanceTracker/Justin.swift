@@ -7,19 +7,20 @@
 
 import Foundation
 
-class data{
+class data: Codable{
     var transactions = [transaction]()
     init(){
 //        transactions.append(transaction(name:"", amount: 0, currency: "", date:""))
+        self.transactions = [transaction]()
     }
     func addTransaction(transaction: transaction){
-        transactions.append(transaction)
+        self.transactions.append(transaction)
     }
     func total() -> Int{
         return self.transactions.count
     }
     func getTransaction(index: Int) -> transaction{
-        return transactions[index]
+        return self.transactions[index]
     }
     func clear() {
         self.transactions =  [transaction]()
@@ -27,11 +28,11 @@ class data{
 }
 
 
-struct transaction {
-    var name: String
-    var amount: Double
-    var currency: String
-    var date: String
+struct transaction: Codable{
+    let name: String
+    let amount: Double
+    let currency: String
+    let date: String
 
     init(name: String,
          amount: Double,
