@@ -7,6 +7,24 @@
 
 import UIKit
 
+extension UIColor {
+   convenience init(red: Int, green: Int, blue: Int) {
+       assert(red >= 0 && red <= 255, "Invalid red component")
+       assert(green >= 0 && green <= 255, "Invalid green component")
+       assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+   }
+
+   convenience init(rgb: Int) {
+       self.init(
+           red: (rgb >> 16) & 0xFF,
+           green: (rgb >> 8) & 0xFF,
+           blue: rgb & 0xFF
+       )
+   }
+}
+
 class DataController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var dataContainer = data()
     
@@ -26,7 +44,18 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         cell.dateLabel!.text = self.dataContainer.getTransaction(index: indexPath.row).date
         cell.merchantNameLabel!.text = self.dataContainer.getTransaction(index: indexPath.row).name
-        cell.amountLabel!.text = String(self.dataContainer.getTransaction(index: indexPath.row).amount)
+        let amount = self.dataContainer.getTransaction(index: indexPath.row).amount
+        if amount >= 0 {
+            cell.amountLabel!.text = "$\(amount)"
+            cell.amountLabel.textColor = UIColor(rgb: 0x1FFF33)
+        }
+        else {
+            var amountString = String(amount)
+            amountString.remove(at: amountString.startIndex)
+            cell.amountLabel!.text = "-$" + amountString
+            cell.amountLabel.textColor = UIColor.red
+        }
+        
         return cell
     }
     
