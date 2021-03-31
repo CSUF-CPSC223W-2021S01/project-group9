@@ -86,14 +86,6 @@
                                     <action selector="getTotalTransactions:" destination="oty-T3-NSa" eventType="touchUpInside" id="Ah4-ki-NzX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-5r-3jq">
-                                <rect key="frame" x="128" y="360" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Export Data"/>
-                                <connections>
-                                    <action selector="exportData:" destination="oty-T3-NSa" eventType="touchUpInside" id="flI-AC-uQo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crm-r2-MK7">
                                 <rect key="frame" x="115" y="257" width="117" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -207,7 +199,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24J-yc-D5o">
-                                <rect key="frame" x="42" y="84" width="49" height="30"/>
+                                <rect key="frame" x="16" y="93" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="refresh"/>
                                 <connections>

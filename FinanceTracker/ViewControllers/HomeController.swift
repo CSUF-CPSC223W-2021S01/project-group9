@@ -25,21 +25,18 @@ class HomeController: UIViewController {
                                     currency: eachTransaction["iso_currency_code"] as! String,
                                     date:     eachTransaction["date"] as! String)
                 self.dataContainer.addTransaction(transaction: t)
-//                print(self.dataContainer.total())
             }
         }
-        
-//        print(self.dataContainer.total())
-    }
-    @IBAction func exportData(_ sender: Any) {
-        let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let archiveUrl = directory.appendingPathComponent("transactions").appendingPathExtension("plist")
+        let seconds = 3.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let archiveUrl = directory.appendingPathComponent("transactions").appendingPathExtension("plist")
 
-        let propertyListEncoder = PropertyListEncoder()
-        if let encodedTransactions = try? propertyListEncoder.encode(dataContainer) {
-            try? encodedTransactions.write(to: archiveUrl, options: .noFileProtection)
+            let propertyListEncoder = PropertyListEncoder()
+            if let encodedTransactions = try? propertyListEncoder.encode(self.dataContainer) {
+                try? encodedTransactions.write(to: archiveUrl, options: .noFileProtection)
+            }
         }
-        print(self.dataContainer.total())
     }
     @IBAction func getTotalTransactions(_ sender: Any) {
         print(self.dataContainer.total())
