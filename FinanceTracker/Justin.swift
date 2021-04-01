@@ -10,7 +10,6 @@ import Foundation
 class data: Codable{
     var transactions = [transaction]()
     init(){
-//        transactions.append(transaction(name:"", amount: 0, currency: "", date:""))
         self.transactions = [transaction]()
     }
     func addTransaction(transaction: transaction){

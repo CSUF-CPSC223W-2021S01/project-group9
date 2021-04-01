@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nb-7q-cqu">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -33,7 +33,7 @@
             <objects>
                 <viewController id="lrD-Nx-IIc" customClass="GraphController" customModule="FinanceTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GSY-OA-3Xh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="sva-zG-XI0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,12 +49,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="FinanceTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-5b-OZf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-5b-OZf">
                                 <rect key="frame" x="94" y="391" width="187" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Connect Account"/>
                                 <connections>
                                     <action selector="connectAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrZ-SW-8pF"/>
@@ -63,6 +62,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Sb-5b-OZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="347" id="1W8-8b-VyV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Sb-5b-OZf" secondAttribute="trailing" constant="109" id="asw-9e-bLH"/>
+                            <constraint firstItem="6Sb-5b-OZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="od4-NU-huE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="gearshape.fill" catalog="system" id="qhl-jI-y98"/>
                 </viewController>
@@ -75,20 +79,18 @@
             <objects>
                 <viewController id="oty-T3-NSa" customClass="HomeController" customModule="FinanceTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ozE-Go-CHd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-7I-KuM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-7I-KuM">
                                 <rect key="frame" x="117" y="452" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Transaction total"/>
                                 <connections>
                                     <action selector="getTotalTransactions:" destination="oty-T3-NSa" eventType="touchUpInside" id="Ah4-ki-NzX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crm-r2-MK7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crm-r2-MK7">
                                 <rect key="frame" x="115" y="257" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Transactions"/>
                                 <connections>
                                     <action selector="getTransactions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oea-aY-bvd"/>
@@ -98,6 +100,13 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TQw-D1-Aw4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rJc-7I-KuM" firstAttribute="leading" secondItem="TQw-D1-Aw4" secondAttribute="leading" constant="117" id="2fs-Yg-qfy"/>
+                            <constraint firstItem="rJc-7I-KuM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="crm-r2-MK7" secondAttribute="trailing" id="OxY-v5-SFc"/>
+                            <constraint firstItem="TQw-D1-Aw4" firstAttribute="bottom" secondItem="rJc-7I-KuM" secondAttribute="bottom" constant="279" id="WyR-G6-5M0"/>
+                            <constraint firstItem="crm-r2-MK7" firstAttribute="top" secondItem="TQw-D1-Aw4" secondAttribute="top" constant="213" id="hmr-sS-hlw"/>
+                            <constraint firstItem="crm-r2-MK7" firstAttribute="leading" secondItem="TQw-D1-Aw4" secondAttribute="leading" constant="115" id="iBf-zC-rAE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="gxA-uP-BpD"/>
                 </viewController>
@@ -108,23 +117,23 @@
         <!--Data-->
         <scene sceneID="3Mi-M8-8lD">
             <objects>
-                <viewController id="RHI-qj-1TO" customClass="DataController" customModule="FinanceTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" id="RHI-qj-1TO" customClass="DataController" customModule="FinanceTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CPg-Ms-H9d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qyr-YZ-JLH">
-                                <rect key="frame" x="0.0" y="131" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="79" width="390" height="682"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="598" id="uBd-cj-5Zi"/>
+                                    <constraint firstAttribute="height" constant="682" id="uBd-cj-5Zi"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="Kv4-Re-M53" customClass="TableViewCell" customModule="FinanceTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kv4-Re-M53" id="Vdj-1q-hiV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merchant Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-22-g20">
@@ -146,7 +155,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Af-10-H95">
-                                                    <rect key="frame" x="294.66666666666669" y="11.333333333333336" width="70.333333333333314" height="21"/>
+                                                    <rect key="frame" x="305.66666666666669" y="11.333333333333336" width="70.333333333333314" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="IwW-VR-0s4"/>
                                                     </constraints>
@@ -176,9 +185,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPi-9Z-Jze">
+                                <rect key="frame" x="333" y="44" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButton:" destination="RHI-qj-1TO" eventType="touchUpInside" id="0nM-86-FZn"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24J-yc-D5o">
-                                <rect key="frame" x="16" y="44" width="49" height="30"/>
-                                <state key="normal" title="refresh"/>
+                                <rect key="frame" x="16" y="44" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
                                 <connections>
                                     <action selector="refreshButton:" destination="RHI-qj-1TO" eventType="touchUpInside" id="8ve-3H-Qfw"/>
                                 </connections>
@@ -187,12 +203,15 @@
                         <viewLayoutGuide key="safeArea" id="P20-Sh-MjS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="P20-Sh-MjS" firstAttribute="trailing" secondItem="HPi-9Z-Jze" secondAttribute="trailing" constant="21" id="GGx-yH-opv"/>
                             <constraint firstItem="24J-yc-D5o" firstAttribute="leading" secondItem="CPg-Ms-H9d" secondAttribute="leadingMargin" id="HKA-jS-h5j"/>
                             <constraint firstItem="Qyr-YZ-JLH" firstAttribute="leading" secondItem="CPg-Ms-H9d" secondAttribute="leading" id="OzY-kH-Yna"/>
-                            <constraint firstItem="Qyr-YZ-JLH" firstAttribute="top" secondItem="24J-yc-D5o" secondAttribute="bottom" constant="57" id="Upy-dK-HQj"/>
+                            <constraint firstItem="Qyr-YZ-JLH" firstAttribute="top" secondItem="24J-yc-D5o" secondAttribute="bottom" constant="5" id="Upy-dK-HQj"/>
                             <constraint firstItem="P20-Sh-MjS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="24J-yc-D5o" secondAttribute="trailing" symbolic="YES" id="X3C-YH-WvU"/>
+                            <constraint firstItem="HPi-9Z-Jze" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="24J-yc-D5o" secondAttribute="trailing" constant="8" symbolic="YES" id="c9T-Bo-8vO"/>
                             <constraint firstAttribute="trailing" secondItem="Qyr-YZ-JLH" secondAttribute="trailing" id="jBJ-4z-lY4"/>
                             <constraint firstItem="Qyr-YZ-JLH" firstAttribute="bottom" secondItem="P20-Sh-MjS" secondAttribute="bottom" id="kZq-kA-f6K"/>
+                            <constraint firstItem="HPi-9Z-Jze" firstAttribute="baseline" secondItem="24J-yc-D5o" secondAttribute="baseline" id="wa3-oa-tks"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Data" image="rectangle.stack.fill" catalog="system" id="WRx-le-1Kl"/>
@@ -202,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcZ-rQ-1YU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375.19999999999999" y="146.30541871921181"/>
+            <point key="canvasLocation" x="-375.38461538461536" y="145.73459715639811"/>
         </scene>
     </scenes>
     <resources>
