@@ -9,6 +9,9 @@ import UIKit
 
 class GraphController: UIViewController, ChartViewDelegate {
     var barChart = BarChartView()
+    var dataContainer = data()
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,5 +38,17 @@ class GraphController: UIViewController, ChartViewDelegate {
         let data = BarChartData(dataSet: set)
         
         barChart.data = data
+    }
+    // retrieves the data from 
+    func getData(){
+        let propertListDecoder = PropertyListDecoder()
+        let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let archiveUrl = directory.appendingPathComponent("transactions").appendingPathExtension("plist")
+    
+        if let retrievedTransactions = try? Data(contentsOf: archiveUrl),
+           let decodedTransactions = try? propertListDecoder.decode(data.self, from: retrievedTransactions) {
+            print(decodedTransactions.total())
+            self.dataContainer = decodedTransactions
+        }
     }
 }
