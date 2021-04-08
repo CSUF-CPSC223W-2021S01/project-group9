@@ -17,7 +17,7 @@ class getTransactions {
     let secret = "d4bcd044d1751fba527799f724b043"
     
     //TODO: make these dynamic to the device (ie, store this id)
-    let tempAccessToken = "access-sandbox-19c042cd-833b-4d52-a962-d5bcf0044a48"
+    let tempAccessToken = "access-sandbox-0e3f2b1f-a589-43ef-b324-8243c55b64a4"
     
     let startDate = "2021-03-1"
     let endDate = "2021-03-03"
