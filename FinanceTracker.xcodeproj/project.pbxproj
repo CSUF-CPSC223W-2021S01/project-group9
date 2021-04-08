@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146315F5261E8D4400D86FD1 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; };
+		146315F6261E8D4400D86FD1 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
-		14DB58A425FA85E90029B2DD /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftPackageProductDependency */; };
+		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
 		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
 		4431E77325EEE945001D5E4B /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431E77225EEE945001D5E4B /* Transactions.swift */; };
 		443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63B25E5832700F378AC /* AppDelegate.swift */; };
@@ -27,8 +29,6 @@
 		7A117D8C2609B774002C2357 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8B2609B774002C2357 /* GraphController.swift */; };
 		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
 		7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D9F2609C26D002C2357 /* TableViewCell.swift */; };
-		7A2B2B99260BFFC000FC30FB /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
-		7A2B2B9A260BFFC000FC30FB /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
 		C89AF972B2442DAF4A14AC93 /* Pods_FinanceTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,13 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7A2B2B9B260BFFC100FC30FB /* Embed Frameworks */ = {
+		146315F7261E8D4400D86FD1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7A2B2B9A260BFFC000FC30FB /* LinkKit.xcframework in Embed Frameworks */,
+				146315F6261E8D4400D86FD1 /* LinkKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +67,7 @@
 /* Begin PBXFileReference section */
 		0C47BE47DB562CB9853EE6F1 /* Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTracker-FinanceTrackerUITests/Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		14520B6C260AD03F00271FA8 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../Desktop/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		146315F4261E8D4400D86FD1 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 		14D9BFAC25E8273C002DFF87 /* Shiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiv.swift; sourceTree = "<group>"; };
 		2F53DE7425EB103B00AB178C /* Trinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinh.swift; sourceTree = "<group>"; };
 		32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A2B2B99260BFFC000FC30FB /* LinkKit.xcframework in Frameworks */,
-				14DB58A425FA85E90029B2DD /* BuildFile in Frameworks */,
+				146315F5261E8D4400D86FD1 /* LinkKit.xcframework in Frameworks */,
+				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
 				5C64B5AB169EB67D53C5DA74 /* Pods_FinanceTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +202,7 @@
 				44E25E5925EEC2050008C45F /* LinkKit.xcframework */,
 				7AB8A84126085F770007F054 /* LinkKit.xcframework */,
 				14520B6C260AD03F00271FA8 /* LinkKit.xcframework */,
+				146315F4261E8D4400D86FD1 /* LinkKit.xcframework */,
 				44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */,
 				3419AA48EEF2E679230FB83F /* Pods_FinanceTracker.framework */,
 				5649170FFB12AD12C6B47E10 /* Pods_FinanceTracker_FinanceTrackerUITests.framework */,
@@ -219,7 +221,6 @@
 				45880A04A6361DA2784D3221 /* Pods-FinanceTrackerTests.debug.xcconfig */,
 				D58927CD88D5BCF27A40E544 /* Pods-FinanceTrackerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -246,8 +247,8 @@
 				443AE63425E5832700F378AC /* Sources */,
 				443AE63525E5832700F378AC /* Frameworks */,
 				443AE63625E5832700F378AC /* Resources */,
-				7A2B2B9B260BFFC100FC30FB /* Embed Frameworks */,
 				EF73B4A46ACA17F5A8FC9CF1 /* [CP] Embed Pods Frameworks */,
+				146315F7261E8D4400D86FD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,7 +256,7 @@
 			);
 			name = FinanceTracker;
 			packageProductDependencies = (
-				14DB58A325FA85E90029B2DD /* SwiftPackageProductDependency */,
+				14DB58A325FA85E90029B2DD /* SwiftUICharts */,
 			);
 			productName = FinanceTracker;
 			productReference = 443AE63825E5832700F378AC /* FinanceTracker.app */;
@@ -332,7 +333,7 @@
 			);
 			mainGroup = 443AE62F25E5832700F378AC;
 			packageReferences = (
-				14DB58A225FA85E90029B2DD /* RemoteSwiftPackageReference */,
+				14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 443AE63925E5832700F378AC /* Products */;
 			projectDirPath = "";
@@ -833,7 +834,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		14DB58A225FA85E90029B2DD /* RemoteSwiftPackageReference */ = {
+		14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView.git";
 			requirement = {
@@ -844,9 +845,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		14DB58A325FA85E90029B2DD /* SwiftPackageProductDependency */ = {
+		14DB58A325FA85E90029B2DD /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 14DB58A225FA85E90029B2DD /* RemoteSwiftPackageReference */;
+			package = 14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -11,21 +11,25 @@ class GraphController: UIViewController, ChartViewDelegate {
     var barChart = BarChartView()
     var dataContainer = data()
     
-
+    @IBOutlet weak var displayLbl: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         barChart.delegate = self
+        displayLbl.text = "Test Bar Graph"
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+        // creates the bar graph
         barChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
-        barChart.center = view.center
+        barChart.center = view.center // centers the bar graph
         
         view.addSubview(barChart)
-        
+        // bar chart data values
+        self.getData()
+        //var totalTranscations: Int = data.total()
         var entries = [BarChartDataEntry]()
         
         for x in 0..<10 {
@@ -36,6 +40,7 @@ class GraphController: UIViewController, ChartViewDelegate {
         set.colors = ChartColorTemplates.joyful()
         
         let data = BarChartData(dataSet: set)
+        
         
         barChart.data = data
     }

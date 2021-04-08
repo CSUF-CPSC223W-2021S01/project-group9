@@ -9,8 +9,10 @@ import UIKit
 
 class LoginController: UIViewController {
 
+    @IBOutlet weak var displayLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayLbl.text = "Login"
 
     }
     @IBAction func connectAccount(_ sender: Any) {

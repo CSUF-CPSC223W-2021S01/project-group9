@@ -10,8 +10,10 @@ import UIKit
 class HomeController: UIViewController {
     var dataContainer = data()
     
+    @IBOutlet weak var displayLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayLbl.text = "Transactions"
     }
     
     // Gets the data from an account and save it into a plist file
