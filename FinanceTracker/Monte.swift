@@ -8,6 +8,18 @@
 import Foundation
 import LinkKit
 
+class AccessToken: Codable {
+    var accessToken: String
+    
+    init() {
+        self.accessToken = ""
+    }
+    
+    func addToken(accessToken: String) {
+        self.accessToken = accessToken
+    }
+}
+
 
 class ConnectBankAccount {
     let url = "http://Project9-env.eba-mmrdmfce.us-east-2.elasticbeanstalk.com/"
@@ -18,6 +30,18 @@ class ConnectBankAccount {
     
     init(_ viewControllerRef: UIViewController) {
         self.viewControllerRef = viewControllerRef
+    }
+    
+    func storeAccessToken(token: String) {
+        let accessTok = AccessToken()
+        accessTok.addToken(accessToken: token)
+        let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let archiveUrl = directory.appendingPathComponent("token").appendingPathExtension("plist")
+
+        let propertyListEncoder = PropertyListEncoder()
+        if let encodedTransactions = try? propertyListEncoder.encode(accessTok) {
+            try? encodedTransactions.write(to: archiveUrl, options: .noFileProtection)
+        }
     }
     
     func connect() {
@@ -67,7 +91,8 @@ class ConnectBankAccount {
                                                 print(dictionary2)
                                                 if status == "Success" {
                                                     print("success")
-                                                    //TODO: store the "accessToken" in dictionary2 into a database
+                                                    let token = dictionary2["accessToken"]
+                                                    self.storeAccessToken(token: token as! String)
                                                 }
                                                 else {
                                                     print("errorer32")
