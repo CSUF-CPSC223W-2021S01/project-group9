@@ -18,6 +18,16 @@ Linkit:
 5. Scroll down to Frameworks, Libraries, and Embedded Content and click the + icon
 6. Click Add Other, then Add Files then go to your unzipped folder (plaid-link-ios-ios-2.0.11) then click on the folder LinkKit.xcframework and press open
 
+Charts:
+1. sudo gem install cocoapods (if you get an error try: sudo gem install cocoapods -v 1.8.4)
+2. cd to the project directory
+3. pod init
+4. open Podfile
+5. Type pod 'Charts' before target 'FinanceTrackerTests' do
+6. Save it and close the file
+7. pod install (in the terminal)
+8. open FinanceTracker.xcworkspace
+
 To authenticate: 
 1. Press the connect to bank account
 2. Choose any bank
