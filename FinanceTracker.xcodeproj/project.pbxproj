@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1463160D262119C900D86FD1 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; };
+		1463160E262119C900D86FD1 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
 		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
 		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
@@ -19,8 +21,6 @@
 		443AE65325E5832800F378AC /* FinanceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65225E5832800F378AC /* FinanceTrackerTests.swift */; };
 		443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */; };
 		443AE66F25E5836700F378AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 443AE66E25E5836700F378AC /* .gitignore */; };
-		44A36125261F75900051B5F6 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E25E5925EEC2050008C45F /* LinkKit.xcframework */; };
-		44A36126261F75900051B5F6 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44E25E5925EEC2050008C45F /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C128F825EC3B5E0024B6FF /* Monte.swift */; };
 		4AACF852985EC2FCDF1F20E1 /* Pods_FinanceTracker_FinanceTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5649170FFB12AD12C6B47E10 /* Pods_FinanceTracker_FinanceTrackerUITests.framework */; };
 		5C64B5AB169EB67D53C5DA74 /* Pods_FinanceTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3419AA48EEF2E679230FB83F /* Pods_FinanceTracker.framework */; };
@@ -51,13 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		44A36127261F75900051B5F6 /* Embed Frameworks */ = {
+		1463160F262119CA00D86FD1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				44A36126261F75900051B5F6 /* LinkKit.xcframework in Embed Frameworks */,
+				1463160E262119C900D86FD1 /* LinkKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A36125261F75900051B5F6 /* LinkKit.xcframework in Frameworks */,
+				1463160D262119C900D86FD1 /* LinkKit.xcframework in Frameworks */,
 				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
 				5C64B5AB169EB67D53C5DA74 /* Pods_FinanceTracker.framework in Frameworks */,
 			);
@@ -248,7 +248,7 @@
 				443AE63525E5832700F378AC /* Frameworks */,
 				443AE63625E5832700F378AC /* Resources */,
 				EF73B4A46ACA17F5A8FC9CF1 /* [CP] Embed Pods Frameworks */,
-				44A36127261F75900051B5F6 /* Embed Frameworks */,
+				1463160F262119CA00D86FD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
