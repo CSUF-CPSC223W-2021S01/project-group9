@@ -50,14 +50,14 @@ class DataController: UIViewController, UITableViewDataSource, UITableViewDelega
         // if amount is positive set the color to green
         // else set it to red
         if amount >= 0 {
-            cell.amountLabel!.text = "$\(amount)"
-            cell.amountLabel.textColor = UIColor(rgb: 0x1FFF33)
+            cell.amountLabel!.text = "-$\(amount)"
+            cell.amountLabel.textColor = UIColor.red
         }
         else {
             var amountString = String(amount)
             amountString.remove(at: amountString.startIndex)
-            cell.amountLabel!.text = "-$" + amountString
-            cell.amountLabel.textColor = UIColor.red
+            cell.amountLabel!.text = "+$" + amountString
+            cell.amountLabel.textColor = UIColor(rgb: 0x1FFF33)
         }
         return cell
     }
