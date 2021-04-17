@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
 		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
+		14E11F9A262A5D0F001D70A0 /* Graph2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */; };
 		14F9E4832625208300D17194 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; };
 		14F9E4842625208300D17194 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
@@ -69,6 +70,7 @@
 		14520B6C260AD03F00271FA8 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../Desktop/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 		146315F4261E8D4400D86FD1 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
 		14D9BFAC25E8273C002DFF87 /* Shiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiv.swift; sourceTree = "<group>"; };
+		14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph2Controller.swift; sourceTree = "<group>"; };
 		2F53DE7425EB103B00AB178C /* Trinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinh.swift; sourceTree = "<group>"; };
 		32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3419AA48EEF2E679230FB83F /* Pods_FinanceTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 				7A117D872609B763002C2357 /* DataController.swift */,
 				7A117D9F2609C26D002C2357 /* TableViewCell.swift */,
 				7A117D8B2609B774002C2357 /* GraphController.swift */,
+				14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */,
 				7A117D8F2609B780002C2357 /* LoginController.swift */,
 			);
 			path = ViewControllers;
@@ -486,6 +489,7 @@
 				7A117D902609B780002C2357 /* LoginController.swift in Sources */,
 				2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */,
 				443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */,
+				14E11F9A262A5D0F001D70A0 /* Graph2Controller.swift in Sources */,
 				443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */,
 				7A117D882609B763002C2357 /* DataController.swift in Sources */,
 				7A117D842609B749002C2357 /* HomeController.swift in Sources */,
