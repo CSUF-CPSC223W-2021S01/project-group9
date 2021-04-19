@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginController: UIViewController {
-
+    
     @IBOutlet weak var displayLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +19,8 @@ class LoginController: UIViewController {
         let connect = ConnectBankAccount(self)
         connect.connect()
     }
-
+    @IBAction func nextSegue(_ sender: Any) {
+        self.performSegue(withIdentifier: "tabBarController", sender: self)
+    }
+    
 }
