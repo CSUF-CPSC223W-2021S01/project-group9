@@ -46,7 +46,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GeT-AD-Zef"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graphs" id="fSO-6N-jLg"/>
                     <connections>
@@ -74,7 +74,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sva-zG-XI0"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graphs" image="line.3.crossed.swirl.circle.fill" catalog="system" id="VsC-pd-frT"/>
                     <connections>
@@ -117,7 +117,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="6Sb-5b-OZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="347" id="1W8-8b-VyV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Sb-5b-OZf" secondAttribute="trailing" constant="109" id="asw-9e-bLH"/>
@@ -165,7 +165,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TQw-D1-Aw4"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="rJc-7I-KuM" firstAttribute="leading" secondItem="TQw-D1-Aw4" secondAttribute="leading" constant="117" id="2fs-Yg-qfy"/>
                             <constraint firstItem="rJc-7I-KuM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="crm-r2-MK7" secondAttribute="trailing" id="OxY-v5-SFc"/>
@@ -270,7 +270,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P20-Sh-MjS"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="P20-Sh-MjS" firstAttribute="trailing" secondItem="HPi-9Z-Jze" secondAttribute="trailing" constant="21" id="GGx-yH-opv"/>
                             <constraint firstItem="24J-yc-D5o" firstAttribute="leading" secondItem="CPg-Ms-H9d" secondAttribute="leadingMargin" id="HKA-jS-h5j"/>
@@ -304,11 +304,11 @@
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
