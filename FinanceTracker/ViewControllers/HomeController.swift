@@ -30,19 +30,22 @@ class HomeController: UIViewController {
                                     date:     eachTransaction["date"] as! String)
                 self.dataContainer.addTransaction(transaction: t)
             }
-        }
-        // Waits 3 seconds before saving the data into a plist file
-        let seconds = 3.0
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let archiveUrl = directory.appendingPathComponent("transactions").appendingPathExtension("plist")
+            // Waits 3 seconds before saving the data into a plist file
+            let seconds = 3.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+                let archiveUrl = directory.appendingPathComponent("transactions").appendingPathExtension("plist")
 
-            let propertyListEncoder = PropertyListEncoder()
-            if let encodedTransactions = try? propertyListEncoder.encode(self.dataContainer) {
-                try? encodedTransactions.write(to: archiveUrl, options: .noFileProtection)
+                let propertyListEncoder = PropertyListEncoder()
+                if let encodedTransactions = try? propertyListEncoder.encode(self.dataContainer) {
+                    try? encodedTransactions.write(to: archiveUrl, options: .noFileProtection)
+                }
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
             }
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+        } onFailure: {
+            print("Error. Failure when getting transactions")
         }
+        
     }
     // returns the number of transactions
     @IBAction func getTotalTransactions(_ sender: Any) {

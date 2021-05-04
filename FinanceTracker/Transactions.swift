@@ -32,7 +32,7 @@ class getTransactions {
         }
     }
     
-    func requestData(completion: @escaping ([String: Any]) -> ()) {
+    func requestData(completion: @escaping ([String: Any]) -> (), onFailure: @escaping ()->Void) {
         if self.accessToken != "" {
             let url = URL(string: self.transactionUrl)
             let payload = "{\"client_id\":\"\(self.clientId)\",\"secret\":\"\(self.secret)\",\"access_token\":\"\(self.accessToken)\", \"start_date\":\"2018-01-01\", \"end_date\":\"2021-03-01\"}".data(using: .utf8)
@@ -45,16 +45,18 @@ class getTransactions {
             URLSession.shared.dataTask(with: request) { (data, response, error) in
 
                 guard let data = data else {
-                    print("error")
-                    return
+                    return onFailure()
                 }
                 if let str = String(data: data, encoding: .utf8) {
                     return completion(self.convertToDictionary(text: str) ?? [String: Any]())
                 }
+                else {
+                    return onFailure()
+                }
             }.resume()
         }
         else {
-            print("EROR")
+            return onFailure()
         }
     }
     
