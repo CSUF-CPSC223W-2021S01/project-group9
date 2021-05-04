@@ -17,7 +17,22 @@ class LoginController: UIViewController {
     }
     @IBAction func connectAccount(_ sender: Any) {
         let connect = ConnectBankAccount(self)
-        connect.connect()
+        connect.connect() { result in
+            switch result {
+            case .Success:
+                print("Success")
+            case .DataReplyError:
+                print("Data Reply Error")
+            case .DataResponseError:
+                print("Data Response Error")
+            case .ExitError:
+                print("User Exited Error")
+            case .FailedError:
+                print("Failed Error")
+            case .URLError:
+                print("URL Errors")
+            }
+        }
     }
     @IBAction func nextSegue(_ sender: Any) {
         self.performSegue(withIdentifier: "tabBarController", sender: self)
