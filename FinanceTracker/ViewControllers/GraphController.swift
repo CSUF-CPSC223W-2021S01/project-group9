@@ -36,7 +36,7 @@ class GraphController: UIViewController, ChartViewDelegate {
         
         let totalTranscations: Int = dataContainer.total()
         if totalTranscations  == 0{
-            
+            displayLbl.text = "Connect account"
         }
         else {
             for x in 0...(totalTranscations - 1) {
