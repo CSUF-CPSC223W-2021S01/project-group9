@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,45 +95,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-5b-OZf">
-                                <rect key="frame" x="94" y="391" width="187" height="30"/>
-                                <state key="normal" title="Connect Account"/>
+                                <rect key="frame" x="102" y="748" width="187" height="30"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Connect Account">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
                                 <connections>
                                     <action selector="connectAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XgY-Up-6cx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-1i-6HH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-1i-6HH">
                                 <rect key="frame" x="16" y="44" width="346" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fFu-AQ-DIL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zww-ow-jeF">
-                                <rect key="frame" x="179" y="483" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y15-l6-Oqs"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CpJ-Om-79i">
+                                <rect key="frame" x="47" y="164" width="288" height="377"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="377" id="Iew-nX-M8H"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="bNP-zj-Qdu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="hne-JG-gZe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="377" id="t0o-ir-9tU"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="6Sb-5b-OZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="347" id="1W8-8b-VyV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Sb-5b-OZf" secondAttribute="trailing" constant="109" id="asw-9e-bLH"/>
-                            <constraint firstItem="6Sb-5b-OZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="od4-NU-huE"/>
+                            <constraint firstItem="6Sb-5b-OZf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="704" id="1W8-8b-VyV"/>
+                            <constraint firstItem="tUZ-1i-6HH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Wv-UE-EqA"/>
+                            <constraint firstItem="tUZ-1i-6HH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RRp-Hc-HQF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Sb-5b-OZf" secondAttribute="trailing" constant="101" id="asw-9e-bLH"/>
+                            <constraint firstItem="6Sb-5b-OZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="od4-NU-huE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tUZ-1i-6HH" secondAttribute="trailing" constant="28" id="u6Y-e6-rAY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="gearshape.fill" catalog="system" id="qhl-jI-y98"/>
                     <connections>
+                        <outlet property="ConnectAccButton" destination="6Sb-5b-OZf" id="SWu-3q-5eP"/>
                         <outlet property="displayLbl" destination="tUZ-1i-6HH" id="ZYx-8O-Gwv"/>
                         <segue destination="7nb-7q-cqu" kind="presentation" identifier="tabBarController" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="RWm-1O-xgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042" y="-555"/>
+            <point key="canvasLocation" x="-1043.0769230769231" y="-555.21327014218002"/>
         </scene>
         <!--Home-->
         <scene sceneID="v50-M8-990">
@@ -297,7 +309,17 @@
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="line.3.crossed.swirl.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="logo" width="512" height="512"/>
         <image name="rectangle.stack.fill" catalog="system" width="128" height="122"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

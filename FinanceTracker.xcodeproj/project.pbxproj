@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1480F84526423697001A2129 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; };
-		1480F84626423697001A2129 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
 		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
 		14E11F9A262A5D0F001D70A0 /* Graph2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */; };
@@ -31,6 +29,8 @@
 		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
 		7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D9F2609C26D002C2357 /* TableViewCell.swift */; };
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
+		7AD4A56026432097009CABC8 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
+		7AD4A56126432097009CABC8 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C89AF972B2442DAF4A14AC93 /* Pods_FinanceTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,13 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1480F84726423697001A2129 /* Embed Frameworks */ = {
+		7AD4A56226432098009CABC8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1480F84626423697001A2129 /* LinkKit.xcframework in Embed Frameworks */,
+				7AD4A56126432097009CABC8 /* LinkKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1480F84526423697001A2129 /* LinkKit.xcframework in Frameworks */,
+				7AD4A56026432097009CABC8 /* LinkKit.xcframework in Frameworks */,
 				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
 				5C64B5AB169EB67D53C5DA74 /* Pods_FinanceTracker.framework in Frameworks */,
 			);
@@ -251,7 +251,7 @@
 				443AE63525E5832700F378AC /* Frameworks */,
 				443AE63625E5832700F378AC /* Resources */,
 				EF73B4A46ACA17F5A8FC9CF1 /* [CP] Embed Pods Frameworks */,
-				1480F84726423697001A2129 /* Embed Frameworks */,
+				7AD4A56226432098009CABC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
