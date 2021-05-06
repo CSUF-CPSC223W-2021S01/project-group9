@@ -13,13 +13,13 @@ class GraphController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var displayLbl: UILabel!
     
+    @IBOutlet weak var clear: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         barChart.delegate = self
         displayLbl.text = "Transactions Per Month"
     }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -29,14 +29,25 @@ class GraphController: UIViewController, ChartViewDelegate {
         // centers the bar graph
         
         view.addSubview(barChart)
-        // bar chart data values
+            // bar chart data values
+            
+        let set = BarChartDataSet(entries: self.graphData(), label: "Transcations per month")
+        
+        set.colors = ChartColorTemplates.joyful()
+        
+        let data = BarChartData(dataSet: set)
+        
+        barChart.data = data
+        }
+    
+    func graphData() -> [BarChartDataEntry]{
         // bar chart for transactions per month
         self.getData()
         var jan = 0, feb = 0, mar = 0, apr = 0, may = 0, jun = 0, jul = 0, aug = 0, sep = 0, oct = 0, nov = 0, dec = 0
-        
+        var entries = [BarChartDataEntry]()
         let totalTranscations: Int = dataContainer.total()
-        if totalTranscations  == 0{
-            displayLbl.text = "Connect account"
+        if totalTranscations  <= 0{
+            barChart.resetZoom()
         }
         else {
             for x in 0...(totalTranscations - 1) {
@@ -85,8 +96,6 @@ class GraphController: UIViewController, ChartViewDelegate {
                     jan = 0; feb = 0; mar = 0; apr = 0; may = 0; jun = 0; jul = 0; aug = 0; sep = 0; oct = 0; nov = 0; dec = 0;
                 }
             }
-            
-            var entries = [BarChartDataEntry]()
             entries.append(BarChartDataEntry(x: Double(1), y: Double(jan)))
             entries.append(BarChartDataEntry(x: Double(2), y: Double(feb)))
             entries.append(BarChartDataEntry(x: Double(3), y: Double(mar)))
@@ -100,19 +109,25 @@ class GraphController: UIViewController, ChartViewDelegate {
             entries.append(BarChartDataEntry(x: Double(11), y: Double(nov)))
             entries.append(BarChartDataEntry(x: Double(12), y: Double(dec)))
             
-            // graph for total finances per month
-            
-            let set = BarChartDataSet(entries: entries, label: "Transcations per month")
-            
-            set.colors = ChartColorTemplates.joyful()
-            
-            let data = BarChartData(dataSet: set)
-            
-             
-            barChart.data = data
         }
-        // retrieves the data from
+        return entries
     }
+    
+
+    @IBAction func clearButton(_ sender: Any) {
+        self.dataContainer.clear()
+        self.barChart.clearValues()
+    }
+    
+    @IBAction func ZoomIn(_ sender: Any) {
+        barChart.zoomIn()
+    }
+    @IBAction func ZoomOut(_ sender: Any) {
+        barChart.zoomOut()
+    }
+    
+    // retrieves the data from
+    
     // retrieves the data from
     func getData(){
         let propertListDecoder = PropertyListDecoder()
@@ -125,6 +140,8 @@ class GraphController: UIViewController, ChartViewDelegate {
             self.dataContainer = decodedTransactions
         }
     }
+    
+
 }
        
 

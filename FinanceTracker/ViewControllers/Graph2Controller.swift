@@ -30,14 +30,26 @@ class Graph2Controller: UIViewController, ChartViewDelegate {
         view.addSubview(barChart)
         // bar chart data values
         // graph for total finances per month
+        let set = BarChartDataSet(entries: self.graphData(), label: "Finances per month")
+        
+        set.colors = ChartColorTemplates.joyful()
+        
+        let data = BarChartData(dataSet: set)
+        
+        barChart.data = data
+    }
+    
+    func graphData() -> [BarChartDataEntry]{
         self.getData()
         var entries = [BarChartDataEntry]()
         var jan : Double = 0, feb: Double = 0, mar: Double = 0, apr: Double = 0, may: Double = 0, jun: Double = 0,
             jul: Double = 0, aug: Double = 0, sep: Double = 0, oct: Double = 0, nov: Double = 0, dec: Double = 0
         let totalTranscations: Int = dataContainer.total()
-        if(totalTranscations == 0){
-            displaylbl.text = "Connect account"
-            
+        if(totalTranscations <= 0){
+            entries.removeAll()
+            let set = BarChartDataSet(entries: entries, label: "Transcations per month")
+            set.colors = ChartColorTemplates.joyful()
+            let data = BarChartData(dataSet: set)
         }else{
             for x in 0...(totalTranscations - 1) {
                var transcation = dataContainer.getTransaction(index: x)
@@ -145,9 +157,8 @@ class Graph2Controller: UIViewController, ChartViewDelegate {
                 else{
                     jan = 0; feb = 0; mar = 0; apr = 0; may = 0; jun = 0; jul = 0; aug = 0; sep = 0; oct = 0; nov = 0; dec = 0;
                 }
-                
             }
-            
+            entries.removeAll()
             entries.append(BarChartDataEntry(x: Double(1), y: Double(jan)))
             entries.append(BarChartDataEntry(x: Double(2), y: Double(feb)))
             entries.append(BarChartDataEntry(x: Double(3), y: Double(mar)))
@@ -162,16 +173,20 @@ class Graph2Controller: UIViewController, ChartViewDelegate {
             entries.append(BarChartDataEntry(x: Double(12), y: Double(dec)))
             
         }
-        
-        let set = BarChartDataSet(entries: entries, label: "Finances per month")
-        
-        set.colors = ChartColorTemplates.joyful()
-        
-        let data = BarChartData(dataSet: set)
-        
-         
-        barChart.data = data
+        return entries
     }
+    
+    @IBAction func clearButton(_ sender: Any) {
+        barChart.clearValues()
+    }
+    @IBAction func ZoomIn(_ sender: Any) {
+        barChart.zoomIn()
+    }
+    
+    @IBAction func ZoomOut(_ sender: Any) {
+        barChart.zoomOut()
+    }
+    
     // retrieves the data from
     func getData(){
         let propertListDecoder = PropertyListDecoder()
