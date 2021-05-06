@@ -7,8 +7,6 @@ Shiv Bhagat
 
 Justin Lee 
 
-Trinh Hoang 
-
 Dependencies:
 Linkit: 
 1. First download linkkit from https://github.com/plaid/plaid-link-ios/releases the 2.0.11 version. Download the zip version
