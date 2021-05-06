@@ -31,6 +31,7 @@
 		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
 		7AD4A56026432097009CABC8 /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; };
 		7AD4A56126432097009CABC8 /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB8A84126085F770007F054 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7AD4A58626437C4A009CABC8 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A58526437C4A009CABC8 /* Animation.swift */; };
 		C89AF972B2442DAF4A14AC93 /* Pods_FinanceTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		7A117D9F2609C26D002C2357 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7A69B7E325EEAF73004A1092 /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
 		7AB8A84126085F770007F054 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../../../../Downloads/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		7AD4A58526437C4A009CABC8 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		9C0D02B3D254765889E0F917 /* Pods-FinanceTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		B981EF088C6C9E714715E196 /* Pods-FinanceTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker.release.xcconfig"; path = "Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker.release.xcconfig"; sourceTree = "<group>"; };
 		D58927CD88D5BCF27A40E544 /* Pods-FinanceTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerTests/Pods-FinanceTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		7A2B2BA7260C03AF00FC30FB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7AD4A58526437C4A009CABC8 /* Animation.swift */,
 				7A117D832609B749002C2357 /* HomeController.swift */,
 				7A117D872609B763002C2357 /* DataController.swift */,
 				7A117D9F2609C26D002C2357 /* TableViewCell.swift */,
@@ -497,6 +500,7 @@
 				14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */,
 				7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */,
 				4431E77325EEE945001D5E4B /* Transactions.swift in Sources */,
+				7AD4A58626437C4A009CABC8 /* Animation.swift in Sources */,
 				44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
