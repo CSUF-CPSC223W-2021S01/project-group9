@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeController: UIViewController {
-    var dataContainer = data()
+    var dataContainer = data() 
     
     @IBOutlet weak var displayLbl: UILabel!
     override func viewDidLoad() {
