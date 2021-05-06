@@ -9,14 +9,14 @@ import UIKit
 
 class LoginController: UIViewController {
     
-    @IBOutlet var ConnectAccButton: UIButton!
-    @IBOutlet weak var displayLbl: UILabel!
+    @IBOutlet var ConnectAccButton: UIButton?
+    @IBOutlet weak var displayLbl: UILabel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayLbl.text = "Login"
-        ConnectAccButton.layer.cornerRadius = 10
-        ConnectAccButton.clipsToBounds = true
+        displayLbl?.text = "Login"
+        ConnectAccButton?.layer.cornerRadius = 10
+        ConnectAccButton?.clipsToBounds = true
     }
     @IBAction func connectAccount(_ sender: Any) {
         let connect = ConnectBankAccount(self)

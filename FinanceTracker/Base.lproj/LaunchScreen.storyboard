@@ -17,24 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-ca-Lke">
-                                <rect key="frame" x="63" y="259.5" width="288" height="377"/>
+                                <rect key="frame" x="132" y="373" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="5hF-bp-5zd"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="288" id="8eL-Qv-RX3"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="377" id="JFn-SZ-cyn"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="377" id="efv-VJ-ntt"/>
+                                    <constraint firstAttribute="width" constant="150" id="Wm5-mX-MQA"/>
+                                    <constraint firstAttribute="height" constant="150" id="yug-rg-hNl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Finance Tracker!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-vZ-LPe">
-                                <rect key="frame" x="20" y="44" width="374" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="sTT-ca-Lke" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6O9-Ak-GKs"/>
                             <constraint firstItem="sTT-ca-Lke" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KGM-85-TVq"/>
@@ -50,8 +41,8 @@
     </scenes>
     <resources>
         <image name="logo" width="512" height="512"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
