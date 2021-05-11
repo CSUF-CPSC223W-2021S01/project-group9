@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9BFAC25E8273C002DFF87 /* Shiv.swift */; };
+		14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 14DB58A325FA85E90029B2DD /* SwiftUICharts */; };
+		14DEC5352643859F009F283F /* LinkKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; };
+		14DEC5362643859F009F283F /* LinkKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 146315F4261E8D4400D86FD1 /* LinkKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14E11F9A262A5D0F001D70A0 /* Graph2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */; };
+		2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53DE7425EB103B00AB178C /* Trinh.swift */; };
+		4431E77325EEE945001D5E4B /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431E77225EEE945001D5E4B /* Transactions.swift */; };
+		443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63B25E5832700F378AC /* AppDelegate.swift */; };
+		443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE63D25E5832700F378AC /* SceneDelegate.swift */; };
+		443AE64325E5832700F378AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AE64125E5832700F378AC /* Main.storyboard */; };
+		443AE64525E5832800F378AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443AE64425E5832800F378AC /* Assets.xcassets */; };
+		443AE64825E5832800F378AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443AE64625E5832800F378AC /* LaunchScreen.storyboard */; };
+		443AE65325E5832800F378AC /* FinanceTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65225E5832800F378AC /* FinanceTrackerTests.swift */; };
+		443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */; };
+		443AE66F25E5836700F378AC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 443AE66E25E5836700F378AC /* .gitignore */; };
+		44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C128F825EC3B5E0024B6FF /* Monte.swift */; };
+		4AACF852985EC2FCDF1F20E1 /* Pods_FinanceTracker_FinanceTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5649170FFB12AD12C6B47E10 /* Pods_FinanceTracker_FinanceTrackerUITests.framework */; };
+		5C64B5AB169EB67D53C5DA74 /* Pods_FinanceTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3419AA48EEF2E679230FB83F /* Pods_FinanceTracker.framework */; };
+		7A117D842609B749002C2357 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D832609B749002C2357 /* HomeController.swift */; };
+		7A117D882609B763002C2357 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D872609B763002C2357 /* DataController.swift */; };
+		7A117D8C2609B774002C2357 /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8B2609B774002C2357 /* GraphController.swift */; };
+		7A117D902609B780002C2357 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D8F2609B780002C2357 /* LoginController.swift */; };
+		7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A117D9F2609C26D002C2357 /* TableViewCell.swift */; };
+		7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69B7E325EEAF73004A1092 /* Justin.swift */; };
+		7AD4A58626437C4A009CABC8 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A58526437C4A009CABC8 /* Animation.swift */; };
+		C89AF972B2442DAF4A14AC93 /* Pods_FinanceTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		443AE64F25E5832800F378AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443AE63025E5832700F378AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443AE63725E5832700F378AC;
+			remoteInfo = FinanceTracker;
+		};
+		443AE65A25E5832800F378AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443AE63025E5832700F378AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443AE63725E5832700F378AC;
+			remoteInfo = FinanceTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14DEC537264385A0009F283F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14DEC5362643859F009F283F /* LinkKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C47BE47DB562CB9853EE6F1 /* Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTracker-FinanceTrackerUITests/Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14520B6C260AD03F00271FA8 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../Desktop/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		146315F4261E8D4400D86FD1 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		14D9BFAC25E8273C002DFF87 /* Shiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiv.swift; sourceTree = "<group>"; };
+		14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph2Controller.swift; sourceTree = "<group>"; };
+		2F53DE7425EB103B00AB178C /* Trinh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trinh.swift; sourceTree = "<group>"; };
+		32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3419AA48EEF2E679230FB83F /* Pods_FinanceTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4431E77225EEE945001D5E4B /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		443AE63825E5832700F378AC /* FinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		443AE63B25E5832700F378AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		443AE63D25E5832700F378AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		443AE64225E5832700F378AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		443AE64425E5832800F378AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		443AE64725E5832800F378AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		443AE64925E5832800F378AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443AE64E25E5832800F378AC /* FinanceTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		443AE65225E5832800F378AC /* FinanceTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTrackerTests.swift; sourceTree = "<group>"; };
+		443AE65425E5832800F378AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443AE65925E5832800F378AC /* FinanceTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTrackerUITests.swift; sourceTree = "<group>"; };
+		443AE65F25E5832800F378AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443AE66E25E5836700F378AC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		44C128F825EC3B5E0024B6FF /* Monte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monte.swift; sourceTree = "<group>"; };
+		44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "plaid-link-ios-ios-2.0.11.zip"; path = "../plaid-link-ios-ios-2.0.11.zip"; sourceTree = "<group>"; };
+		44E25E5925EEC2050008C45F /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		45880A04A6361DA2784D3221 /* Pods-FinanceTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerTests/Pods-FinanceTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5649170FFB12AD12C6B47E10 /* Pods_FinanceTracker_FinanceTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceTracker_FinanceTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CCAC5F1B9393E1BF6172FC /* Pods-FinanceTracker-FinanceTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker-FinanceTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTracker-FinanceTrackerUITests/Pods-FinanceTracker-FinanceTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A117D832609B749002C2357 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		7A117D872609B763002C2357 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7A117D8B2609B774002C2357 /* GraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphController.swift; sourceTree = "<group>"; };
+		7A117D8F2609B780002C2357 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		7A117D9F2609C26D002C2357 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7A69B7E325EEAF73004A1092 /* Justin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Justin.swift; sourceTree = "<group>"; };
+		7AB8A84126085F770007F054 /* LinkKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LinkKit.xcframework; path = "../../../../../Downloads/plaid-link-ios-ios-2.0.11/LinkKit.xcframework"; sourceTree = "<group>"; };
+		7AD4A58526437C4A009CABC8 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		9C0D02B3D254765889E0F917 /* Pods-FinanceTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker.debug.xcconfig"; path = "Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		B981EF088C6C9E714715E196 /* Pods-FinanceTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTracker.release.xcconfig"; path = "Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker.release.xcconfig"; sourceTree = "<group>"; };
+		D58927CD88D5BCF27A40E544 /* Pods-FinanceTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-FinanceTrackerTests/Pods-FinanceTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		443AE63525E5832700F378AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DEC5352643859F009F283F /* LinkKit.xcframework in Frameworks */,
+				14DB58A425FA85E90029B2DD /* SwiftUICharts in Frameworks */,
+				5C64B5AB169EB67D53C5DA74 /* Pods_FinanceTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443AE64B25E5832800F378AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89AF972B2442DAF4A14AC93 /* Pods_FinanceTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443AE65625E5832800F378AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AACF852985EC2FCDF1F20E1 /* Pods_FinanceTracker_FinanceTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		443AE62F25E5832700F378AC = {
+			isa = PBXGroup;
+			children = (
+				443AE66E25E5836700F378AC /* .gitignore */,
+				443AE63A25E5832700F378AC /* FinanceTracker */,
+				443AE65125E5832800F378AC /* FinanceTrackerTests */,
+				443AE65C25E5832800F378AC /* FinanceTrackerUITests */,
+				443AE63925E5832700F378AC /* Products */,
+				44E25E5725EEC1BC0008C45F /* Frameworks */,
+				67ED3F21E8B7A98AFDE084CC /* Pods */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		443AE63925E5832700F378AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				443AE63825E5832700F378AC /* FinanceTracker.app */,
+				443AE64E25E5832800F378AC /* FinanceTrackerTests.xctest */,
+				443AE65925E5832800F378AC /* FinanceTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		443AE63A25E5832700F378AC /* FinanceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				443AE63B25E5832700F378AC /* AppDelegate.swift */,
+				443AE63D25E5832700F378AC /* SceneDelegate.swift */,
+				7A2B2BA7260C03AF00FC30FB /* ViewControllers */,
+				443AE64125E5832700F378AC /* Main.storyboard */,
+				443AE64425E5832800F378AC /* Assets.xcassets */,
+				443AE64625E5832800F378AC /* LaunchScreen.storyboard */,
+				443AE64925E5832800F378AC /* Info.plist */,
+				7A69B7E325EEAF73004A1092 /* Justin.swift */,
+				14D9BFAC25E8273C002DFF87 /* Shiv.swift */,
+				2F53DE7425EB103B00AB178C /* Trinh.swift */,
+				44C128F825EC3B5E0024B6FF /* Monte.swift */,
+				4431E77225EEE945001D5E4B /* Transactions.swift */,
+			);
+			path = FinanceTracker;
+			sourceTree = "<group>";
+		};
+		443AE65125E5832800F378AC /* FinanceTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				443AE65225E5832800F378AC /* FinanceTrackerTests.swift */,
+				443AE65425E5832800F378AC /* Info.plist */,
+			);
+			path = FinanceTrackerTests;
+			sourceTree = "<group>";
+		};
+		443AE65C25E5832800F378AC /* FinanceTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				443AE65D25E5832800F378AC /* FinanceTrackerUITests.swift */,
+				443AE65F25E5832800F378AC /* Info.plist */,
+			);
+			path = FinanceTrackerUITests;
+			sourceTree = "<group>";
+		};
+		44E25E5725EEC1BC0008C45F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E25E5925EEC2050008C45F /* LinkKit.xcframework */,
+				7AB8A84126085F770007F054 /* LinkKit.xcframework */,
+				14520B6C260AD03F00271FA8 /* LinkKit.xcframework */,
+				146315F4261E8D4400D86FD1 /* LinkKit.xcframework */,
+				44E25E5825EEC1BC0008C45F /* plaid-link-ios-ios-2.0.11.zip */,
+				3419AA48EEF2E679230FB83F /* Pods_FinanceTracker.framework */,
+				5649170FFB12AD12C6B47E10 /* Pods_FinanceTracker_FinanceTrackerUITests.framework */,
+				32003094B25FA5062BB821C1 /* Pods_FinanceTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67ED3F21E8B7A98AFDE084CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D02B3D254765889E0F917 /* Pods-FinanceTracker.debug.xcconfig */,
+				B981EF088C6C9E714715E196 /* Pods-FinanceTracker.release.xcconfig */,
+				79CCAC5F1B9393E1BF6172FC /* Pods-FinanceTracker-FinanceTrackerUITests.debug.xcconfig */,
+				0C47BE47DB562CB9853EE6F1 /* Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig */,
+				45880A04A6361DA2784D3221 /* Pods-FinanceTrackerTests.debug.xcconfig */,
+				D58927CD88D5BCF27A40E544 /* Pods-FinanceTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A2B2BA7260C03AF00FC30FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AD4A58526437C4A009CABC8 /* Animation.swift */,
+				7A117D8F2609B780002C2357 /* LoginController.swift */,
+				7A117D832609B749002C2357 /* HomeController.swift */,
+				7A117D872609B763002C2357 /* DataController.swift */,
+				7A117D9F2609C26D002C2357 /* TableViewCell.swift */,
+				7A117D8B2609B774002C2357 /* GraphController.swift */,
+				14E11F99262A5D0F001D70A0 /* Graph2Controller.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		443AE63725E5832700F378AC /* FinanceTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443AE66225E5832800F378AC /* Build configuration list for PBXNativeTarget "FinanceTracker" */;
+			buildPhases = (
+				6011F78BBC3E834516B6DD1A /* [CP] Check Pods Manifest.lock */,
+				443AE63425E5832700F378AC /* Sources */,
+				443AE63525E5832700F378AC /* Frameworks */,
+				443AE63625E5832700F378AC /* Resources */,
+				EF73B4A46ACA17F5A8FC9CF1 /* [CP] Embed Pods Frameworks */,
+				14DEC537264385A0009F283F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinanceTracker;
+			packageProductDependencies = (
+				14DB58A325FA85E90029B2DD /* SwiftUICharts */,
+			);
+			productName = FinanceTracker;
+			productReference = 443AE63825E5832700F378AC /* FinanceTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		443AE64D25E5832800F378AC /* FinanceTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443AE66525E5832800F378AC /* Build configuration list for PBXNativeTarget "FinanceTrackerTests" */;
+			buildPhases = (
+				B77A5EC6571C4B216D447BF0 /* [CP] Check Pods Manifest.lock */,
+				443AE64A25E5832800F378AC /* Sources */,
+				443AE64B25E5832800F378AC /* Frameworks */,
+				443AE64C25E5832800F378AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				443AE65025E5832800F378AC /* PBXTargetDependency */,
+			);
+			name = FinanceTrackerTests;
+			productName = FinanceTrackerTests;
+			productReference = 443AE64E25E5832800F378AC /* FinanceTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		443AE65825E5832800F378AC /* FinanceTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443AE66825E5832800F378AC /* Build configuration list for PBXNativeTarget "FinanceTrackerUITests" */;
+			buildPhases = (
+				FCE6E5E857F6486B7C60DE77 /* [CP] Check Pods Manifest.lock */,
+				443AE65525E5832800F378AC /* Sources */,
+				443AE65625E5832800F378AC /* Frameworks */,
+				443AE65725E5832800F378AC /* Resources */,
+				63920FF24782F3691E17DE66 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				443AE65B25E5832800F378AC /* PBXTargetDependency */,
+			);
+			name = FinanceTrackerUITests;
+			productName = FinanceTrackerUITests;
+			productReference = 443AE65925E5832800F378AC /* FinanceTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		443AE63025E5832700F378AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					443AE63725E5832700F378AC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					443AE64D25E5832800F378AC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 443AE63725E5832700F378AC;
+					};
+					443AE65825E5832800F378AC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 443AE63725E5832700F378AC;
+					};
+				};
+			};
+			buildConfigurationList = 443AE63325E5832700F378AC /* Build configuration list for PBXProject "FinanceTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 443AE62F25E5832700F378AC;
+			packageReferences = (
+				14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = 443AE63925E5832700F378AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				443AE63725E5832700F378AC /* FinanceTracker */,
+				443AE64D25E5832800F378AC /* FinanceTrackerTests */,
+				443AE65825E5832800F378AC /* FinanceTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		443AE63625E5832700F378AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443AE66F25E5836700F378AC /* .gitignore in Resources */,
+				443AE64825E5832800F378AC /* LaunchScreen.storyboard in Resources */,
+				443AE64525E5832800F378AC /* Assets.xcassets in Resources */,
+				443AE64325E5832700F378AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443AE64C25E5832800F378AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443AE65725E5832800F378AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6011F78BBC3E834516B6DD1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63920FF24782F3691E17DE66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTracker-FinanceTrackerUITests/Pods-FinanceTracker-FinanceTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTracker-FinanceTrackerUITests/Pods-FinanceTracker-FinanceTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTracker-FinanceTrackerUITests/Pods-FinanceTracker-FinanceTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77A5EC6571C4B216D447BF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF73B4A46ACA17F5A8FC9CF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceTracker/Pods-FinanceTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE6E5E857F6486B7C60DE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceTracker-FinanceTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		443AE63425E5832700F378AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A69B7E425EEAF73004A1092 /* Justin.swift in Sources */,
+				7A117D902609B780002C2357 /* LoginController.swift in Sources */,
+				2F53DE7525EB103B00AB178C /* Trinh.swift in Sources */,
+				443AE63C25E5832700F378AC /* AppDelegate.swift in Sources */,
+				14E11F9A262A5D0F001D70A0 /* Graph2Controller.swift in Sources */,
+				443AE63E25E5832700F378AC /* SceneDelegate.swift in Sources */,
+				7A117D882609B763002C2357 /* DataController.swift in Sources */,
+				7A117D842609B749002C2357 /* HomeController.swift in Sources */,
+				7A117D8C2609B774002C2357 /* GraphController.swift in Sources */,
+				14D9BFAD25E8273C002DFF87 /* Shiv.swift in Sources */,
+				7A117DA02609C26D002C2357 /* TableViewCell.swift in Sources */,
+				4431E77325EEE945001D5E4B /* Transactions.swift in Sources */,
+				7AD4A58626437C4A009CABC8 /* Animation.swift in Sources */,
+				44C128F925EC3B5E0024B6FF /* Monte.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443AE64A25E5832800F378AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443AE65325E5832800F378AC /* FinanceTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		443AE65525E5832800F378AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443AE65E25E5832800F378AC /* FinanceTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		443AE65025E5832800F378AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443AE63725E5832700F378AC /* FinanceTracker */;
+			targetProxy = 443AE64F25E5832800F378AC /* PBXContainerItemProxy */;
+		};
+		443AE65B25E5832800F378AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443AE63725E5832700F378AC /* FinanceTracker */;
+			targetProxy = 443AE65A25E5832800F378AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		443AE64125E5832700F378AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				443AE64225E5832700F378AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		443AE64625E5832800F378AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				443AE64725E5832800F378AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		443AE66025E5832800F378AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		443AE66125E5832800F378AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		443AE66325E5832800F378AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0D02B3D254765889E0F917 /* Pods-FinanceTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZY238MXMD;
+				INFOPLIST_FILE = FinanceTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Davityan.FinanceTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		443AE66425E5832800F378AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B981EF088C6C9E714715E196 /* Pods-FinanceTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZY238MXMD;
+				INFOPLIST_FILE = FinanceTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Davityan.FinanceTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		443AE66625E5832800F378AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45880A04A6361DA2784D3221 /* Pods-FinanceTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZY238MXMD;
+				INFOPLIST_FILE = FinanceTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Davityan.FinanceTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceTracker.app/FinanceTracker";
+			};
+			name = Debug;
+		};
+		443AE66725E5832800F378AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D58927CD88D5BCF27A40E544 /* Pods-FinanceTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZY238MXMD;
+				INFOPLIST_FILE = FinanceTrackerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Davityan.FinanceTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinanceTracker.app/FinanceTracker";
+			};
+			name = Release;
+		};
+		443AE66925E5832800F378AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CCAC5F1B9393E1BF6172FC /* Pods-FinanceTracker-FinanceTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZY238MXMD;
+				INFOPLIST_FILE = FinanceTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Davityan.FinanceTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceTracker;
+			};
+			name = Debug;
+		};
+		443AE66A25E5832800F378AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C47BE47DB562CB9853EE6F1 /* Pods-FinanceTracker-FinanceTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZY238MXMD;
+				INFOPLIST_FILE = FinanceTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Davityan.FinanceTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinanceTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		443AE63325E5832700F378AC /* Build configuration list for PBXProject "FinanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443AE66025E5832800F378AC /* Debug */,
+				443AE66125E5832800F378AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443AE66225E5832800F378AC /* Build configuration list for PBXNativeTarget "FinanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443AE66325E5832800F378AC /* Debug */,
+				443AE66425E5832800F378AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443AE66525E5832800F378AC /* Build configuration list for PBXNativeTarget "FinanceTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443AE66625E5832800F378AC /* Debug */,
+				443AE66725E5832800F378AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443AE66825E5832800F378AC /* Build configuration list for PBXNativeTarget "FinanceTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443AE66925E5832800F378AC /* Debug */,
+				443AE66A25E5832800F378AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14DB58A325FA85E90029B2DD /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14DB58A225FA85E90029B2DD /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 443AE63025E5832700F378AC /* Project object */;
+}
